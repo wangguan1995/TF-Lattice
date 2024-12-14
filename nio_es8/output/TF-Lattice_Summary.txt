@@ -1,0 +1,22 @@
+PRODUCT: TF-Lattice Automotive Aerodynamics Solver
+2024R1 version: 3.2.78 (SP_20241112_668b6ab7)
+================== Settings ==================
+Maximum voxel size: 2.048000 m
+Minimum voxel size: 0.008000 m
+Total voxels: 23800489
+Total fine equivalent voxels: 21594078
+
+Physical simulation time: 1.9997 s
+Time increment: 0.000014 s
+Inlet velocity: 30.0000 m/s
+Frontal area: 2.965800 m^2
+
+================== Results ==================
+Average drag, lift, side force coefficients:
+Cd: 0.3722
+Cl: -0.0950
+Cs: -0.0107
+
+Simulation start time: 2024-12-12 15:03:30
+Simulation end time: 2024-12-12 18:56:19
+Simulation duration: 03:52:48
