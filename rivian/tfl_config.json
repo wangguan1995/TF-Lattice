@@ -1,0 +1,475 @@
+[
+  {
+    "simulation_domain": [
+      -25.0,
+      -25.0,
+      -0.365,
+      50.0,
+      25.0,
+      30.0
+    ],
+    "bottom_height": [
+      "copy",
+      0,
+      "simulation_domain",
+      2
+    ],
+    "kinematic_viscosity": 1.85508e-05,
+    "density": 1.18415,
+    "minimum_grid_size": 0.008,
+    "simulation_duration": 2.0,
+    "reference_velocity": 30.0,
+    "reference_pressure": 101325.0,
+    "enable_wheel_rotation": true,
+    "enable_porous_media": false,
+    "enable_moving_ground": true,
+    "enable_auto_reference_area_calculation": true,
+    "geometry_smoothness_grade": 2,
+    "geometry_file": "./tfl_geometry.tfgeo",
+    "output_path": "./output_2",
+    "output_averaging_start_time_sec": 1.0,
+    "geometries": {
+      "stationary_wall": [
+        "2nd_Row_Armrest_Down",
+        "2nd_Row_Armrest_Down_Lid_Down",
+        "2nd_Row_Armrest_Down_Lid_Up",
+        "2nd_Row_Floor_Mat",
+        "2nd_Row_Middle_Headrest up",
+        "Accelerator_Pedal",
+        "Accelerator_Pedal_On",
+        "Aeroshields",
+        "Antenna",
+        "BIW",
+        "Brake_Pedal",
+        "Brake_Pedal_On",
+        "Centerconsole_Opened",
+        "Day_Time_Light_Bar",
+        "Driver_Door",
+        "Driver_Door_Glass",
+        "Driver_Door_Mirror",
+        "Driver_Door_Quarterglass_Blackband",
+        "Driver_Door_Quarterglass_Vision_Area",
+        "Driver_Hinges",
+        "Driver_Seat_Back",
+        "Driver_Seat_Belt_Lock",
+        "Driver_Seat_Cushion",
+        "Driver_Seat_Drawer",
+        "Driver_Seat_Frame",
+        "Driver_Seat_Trim",
+        "Driver_Side_Visor",
+        "Electric_Lid",
+        "FL_Door_Sealing",
+        "FL_Fender",
+        "FL_Floor_Mat",
+        "FL_Seat_Belt",
+        "FL_Wheelhouse_Liner",
+        "Floor",
+        "FR_Door_Sealing",
+        "FR_Fender",
+        "FR_Floor_Mat",
+        "FR_Seat_Belt",
+        "FR_Wheelhouse_Liner",
+        "Front_Bumper",
+        "GEAR_Tunnel",
+        "Headliner",
+        "Hood",
+        "Hood_Hinges",
+        "IP",
+        "IP_Centerconsole_Lid",
+        "IP_Steering_Wheel_System",
+        "Left_A-Pillar_Exterior_Trim",
+        "Left_GEAR_Tunnel_Seal",
+        "Left_Headlight",
+        "Left_Rocker_Panel_Seal",
+        "Left_Side_Trims",
+        "Left_Storage_Door_Closed",
+        "Left_Taillight",
+        "Passenger_Door",
+        "Passenger_Door_Glass",
+        "Passenger_Door_Hinges",
+        "Passenger_Door_Mirror",
+        "Passenger_Door_Quarterglass_Blackband",
+        "Passenger_Door_Quarterglass_Vision",
+        "Passenger_Seat_Back",
+        "Passenger_Seat_Belt_Lock",
+        "Passenger_Seat_Cushion",
+        "Passenger_Seat_Drawer",
+        "Passenger_Seat_Frame",
+        "Passenger_Seat_Trim",
+        "Passenger_Side_Visor",
+        "Rear View Mirror",
+        "Rear_Bumper",
+        "Rear_Row_Middle_Headrest",
+        "Rear_Row_Seat_Back",
+        "Rear_Seat_Left_Cushion",
+        "Rear_Seat_Left_Headrest",
+        "Rear_Seat_Middle_Armrest",
+        "Rear_Seat_Right_Cushion",
+        "Rear_Seat_Right_Headrest",
+        "Rear_Storage",
+        "Rear_Wall",
+        "Rear_Window_Blackband_Area",
+        "Rear_Window_Dotted_Area",
+        "Rear_Window_Vision",
+        "Right_A-Pillar_Exterior_Trim",
+        "Right_GEAR_Tunnel_Seal",
+        "Right_Headlight",
+        "Right_Rocker_Panel_Seal",
+        "Right_Side_Trims",
+        "Right_Storage_Door_Closed",
+        "Right_Taillight",
+        "RL_Door",
+        "RL_Door_Glass",
+        "RL_Door_Hinges",
+        "RL_Door_Sealing",
+        "RL_Fender",
+        "RL_Seat_Belt",
+        "RL_Wheelhouse_Liner",
+        "RM_Seat_Belt",
+        "Roof_Racks",
+        "RR_Door",
+        "RR_Door_Glass",
+        "RR_Door_Hinges",
+        "RR_Door_Sealing",
+        "RR_Fender",
+        "RR_Seat_Belt",
+        "RR_Wheelhouse_Liner",
+        "Spoiler",
+        "Sunroof",
+        "Tailgate",
+        "Tailgate_Hinges",
+        "Tonneau_Cover",
+        "Tonneau_Cover_Closed",
+        "Truck_Bed_Floor",
+        "Truck_Bed_Front_Panel",
+        "Truck_Bed_Left_Panel",
+        "Truck_Bed_Removable_Floor",
+        "Truck_Bed_Right_Panel",
+        "Truck_Bed_Storage_Divider",
+        "Truck_Bed_Trims",
+        "Underbody",
+        "Underhood",
+        "Underhood_Floor",
+        "Windshield_Blackband",
+        "Windshield_Dotted_Area",
+        "Windshield_System",
+        "Windshield_Vision_Area"
+      ],
+      "wheel": {
+        "RotationSet": [
+          "FL_wheel"
+        ],
+        "RotationSet_1": [
+          "RL_wheel"
+        ],
+        "RotationSet_2": [
+          "FR_wheel"
+        ],
+        "RotationSet_3": [
+          "RR_wheel"
+        ]
+      },
+      "refinement": {
+        "level_8": [
+          "2nd_Row_Armrest_Down",
+          "2nd_Row_Armrest_Down_Lid_Down",
+          "2nd_Row_Armrest_Down_Lid_Up",
+          "2nd_Row_Floor_Mat",
+          "2nd_Row_Middle_Headrest up",
+          "Accelerator_Pedal",
+          "Accelerator_Pedal_On",
+          "Aeroshields",
+          "Antenna",
+          "BIW",
+          "Brake_Pedal",
+          "Brake_Pedal_On",
+          "Centerconsole_Opened",
+          "Day_Time_Light_Bar",
+          "Driver_Door",
+          "Driver_Door_Glass",
+          "Driver_Door_Mirror",
+          "Driver_Door_Quarterglass_Blackband",
+          "Driver_Door_Quarterglass_Vision_Area",
+          "Driver_Hinges",
+          "Driver_Seat_Back",
+          "Driver_Seat_Belt_Lock",
+          "Driver_Seat_Cushion",
+          "Driver_Seat_Drawer",
+          "Driver_Seat_Frame",
+          "Driver_Seat_Trim",
+          "Driver_Side_Visor",
+          "Electric_Lid",
+          "FL_Door_Sealing",
+          "FL_Fender",
+          "FL_Floor_Mat",
+          "FL_Seat_Belt",
+          "FL_Wheelhouse_Liner",
+          "Floor",
+          "FR_Door_Sealing",
+          "FR_Fender",
+          "FR_Floor_Mat",
+          "FR_Seat_Belt",
+          "FR_Wheelhouse_Liner",
+          "Front_Bumper",
+          "GEAR_Tunnel",
+          "Headliner",
+          "Hood",
+          "Hood_Hinges",
+          "IP",
+          "IP_Centerconsole_Lid",
+          "IP_Steering_Wheel_System",
+          "Left_A-Pillar_Exterior_Trim",
+          "Left_GEAR_Tunnel_Seal",
+          "Left_Headlight",
+          "Left_Rocker_Panel_Seal",
+          "Left_Side_Trims",
+          "Left_Storage_Door_Closed",
+          "Left_Taillight",
+          "Passenger_Door",
+          "Passenger_Door_Glass",
+          "Passenger_Door_Hinges",
+          "Passenger_Door_Mirror",
+          "Passenger_Door_Quarterglass_Blackband",
+          "Passenger_Door_Quarterglass_Vision",
+          "Passenger_Seat_Back",
+          "Passenger_Seat_Belt_Lock",
+          "Passenger_Seat_Cushion",
+          "Passenger_Seat_Drawer",
+          "Passenger_Seat_Frame",
+          "Passenger_Seat_Trim",
+          "Passenger_Side_Visor",
+          "Rear View Mirror",
+          "Rear_Bumper",
+          "Rear_Row_Middle_Headrest",
+          "Rear_Row_Seat_Back",
+          "Rear_Seat_Left_Cushion",
+          "Rear_Seat_Left_Headrest",
+          "Rear_Seat_Middle_Armrest",
+          "Rear_Seat_Right_Cushion",
+          "Rear_Seat_Right_Headrest",
+          "Rear_Storage",
+          "Rear_Wall",
+          "Rear_Window_Blackband_Area",
+          "Rear_Window_Dotted_Area",
+          "Rear_Window_Vision",
+          "Right_A-Pillar_Exterior_Trim",
+          "Right_GEAR_Tunnel_Seal",
+          "Right_Headlight",
+          "Right_Rocker_Panel_Seal",
+          "Right_Side_Trims",
+          "Right_Storage_Door_Closed",
+          "Right_Taillight",
+          "RL_Door",
+          "RL_Door_Glass",
+          "RL_Door_Hinges",
+          "RL_Door_Sealing",
+          "RL_Fender",
+          "RL_Seat_Belt",
+          "RL_Wheelhouse_Liner",
+          "RM_Seat_Belt",
+          "Roof_Racks",
+          "RR_Door",
+          "RR_Door_Glass",
+          "RR_Door_Hinges",
+          "RR_Door_Sealing",
+          "RR_Fender",
+          "RR_Seat_Belt",
+          "RR_Wheelhouse_Liner",
+          "Spoiler",
+          "Sunroof",
+          "Tailgate",
+          "Tailgate_Hinges",
+          "Tonneau_Cover",
+          "Tonneau_Cover_Closed",
+          "Truck_Bed_Floor",
+          "Truck_Bed_Front_Panel",
+          "Truck_Bed_Left_Panel",
+          "Truck_Bed_Removable_Floor",
+          "Truck_Bed_Right_Panel",
+          "Truck_Bed_Storage_Divider",
+          "Truck_Bed_Trims",
+          "Underbody",
+          "Underhood",
+          "Underhood_Floor",
+          "Windshield_Blackband",
+          "Windshield_Dotted_Area",
+          "Windshield_System",
+          "Windshield_Vision_Area",
+          "FL_wheel",
+          "FR_wheel",
+          "RL_wheel",
+          "RR_wheel"
+        ]
+      }
+    },
+    "grid_refinement": {
+      "level_1": {
+        "boxes": [
+          [
+            -10.0,
+            -8.0,
+            -0.365,
+            40.0,
+            8.0,
+            8.0
+          ]
+        ]
+      },
+      "level_2": {
+        "boxes": [
+          [
+            -7.0,
+            -6.0,
+            -0.365,
+            32.0,
+            6.0,
+            6.0
+          ]
+        ]
+      },
+      "level_3": {
+        "boxes": [
+          [
+            -5.0,
+            -4.0,
+            -0.365,
+            22.0,
+            4.0,
+            4.0
+          ]
+        ]
+      },
+      "level_4": {
+        "boxes": [
+          [
+            -3.5,
+            -3.0,
+            -0.365,
+            15.0,
+            3.0,
+            3.8
+          ]
+        ]
+      },
+      "level_5": {
+        "boxes": [
+          [
+            -1.8,
+            -2.0,
+            -0.365,
+            9.0,
+            2.0,
+            2.25
+          ]
+        ]
+      },
+      "level_6": {
+        "boxes": [
+          [
+            2.4,
+            -1.2,
+            -0.365,
+            7.5,
+            1.2,
+            1.8
+          ],
+          [
+            -1.2,
+            -1.2,
+            -0.365,
+            5.0,
+            1.2,
+            -0.02
+          ]
+        ]
+      },
+      "level_7": {
+        "min_buffer_size": 8
+      },
+      "level_8": {
+        "body_fit_thickness": 6
+      }
+    },
+    "wheel_group": {
+      "RotationSet": {
+        "geometry_group": "geometries>wheel>RotationSet",
+        "enable_auto_wheel_rotation_setting": true,
+        "rotation_center": [
+          0,
+          0,
+          0
+        ],
+        "rotation_axis": [
+          0,
+          0,
+          0
+        ],
+        "rotation_speed": 676.75
+      },
+      "RotationSet_1": {
+        "geometry_group": "geometries>wheel>RotationSet_1",
+        "enable_auto_wheel_rotation_setting": true,
+        "rotation_center": [
+          0,
+          0,
+          0
+        ],
+        "rotation_axis": [
+          0,
+          0,
+          0
+        ],
+        "rotation_speed": 676.75
+      },
+      "RotationSet_2": {
+        "geometry_group": "geometries>wheel>RotationSet_2",
+        "enable_auto_wheel_rotation_setting": true,
+        "rotation_center": [
+          0,
+          0,
+          0
+        ],
+        "rotation_axis": [
+          0,
+          0,
+          0
+        ],
+        "rotation_speed": -676.75
+      },
+      "RotationSet_3": {
+        "geometry_group": "geometries>wheel>RotationSet_3",
+        "enable_auto_wheel_rotation_setting": true,
+        "rotation_center": [
+          0,
+          0,
+          0
+        ],
+        "rotation_axis": [
+          0,
+          0,
+          0
+        ],
+        "rotation_speed": -676.75
+      }
+    },
+    "porous_media_group": null,
+    "instantaneous_field_data_output": {
+      "field_data_output": {
+        "output_start_time_sec": 0.0,
+        "output_end_time_sec": 2.0,
+        "output_interval_sec": 1.0
+      }
+    },
+    "averaged_field_data_output": {
+      "field_data_output": {}
+    },
+    "drag_development_output": {
+      "num_of_bin": 100,
+      "output_range": "default"
+    }
+  },
+  [
+    "include",
+    "tfl_automobile.json"
+  ]
+]
