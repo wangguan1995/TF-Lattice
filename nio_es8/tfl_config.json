@@ -1,0 +1,236 @@
+[
+  {
+    "simulation_domain": [
+      -25.0,
+      -25.0,
+      -0.365,
+      50.0,
+      25.0,
+      30.0
+    ],
+    "bottom_height": [
+      "copy",
+      0,
+      "simulation_domain",
+      2
+    ],
+    "kinematic_viscosity": 1.85508e-05,
+    "density": 1.18415,
+    "minimum_grid_size": 0.008,
+    "simulation_duration": 2.0,
+    "reference_velocity": 30.0,
+    "reference_pressure": 101325.0,
+    "enable_wheel_rotation": true,
+    "enable_porous_media": false,
+    "enable_moving_ground": true,
+    "enable_auto_reference_area_calculation": true,
+    "geometry_smoothness_grade": 2,
+    "geometry_path": "./mesh",
+    "geometry_file": [
+      "body.stl",
+      "wheel_fl.stl",
+      "wheel_fr.stl",
+      "wheel_rl.stl",
+      "wheel_rr.stl"
+    ],
+    "output_path": "./output",
+    "output_averaging_start_time_sec": 1.0,
+    "geometries": {
+      "stationary_wall": [
+        "body"
+      ],
+      "wheel": {
+        "RotationSet": [
+          "wheel_fl"
+        ],
+        "RotationSet_1": [
+          "wheel_rl"
+        ],
+        "RotationSet_2": [
+          "wheel_fr"
+        ],
+        "RotationSet_3": [
+          "wheel_rr"
+        ]
+      },
+      "refinement": {
+        "level_8": [
+          "body",
+          "wheel_fl",
+          "wheel_fr",
+          "wheel_rl",
+          "wheel_rr"
+        ]
+      }
+    },
+    "grid_refinement": {
+      "level_1": {
+        "boxes": [
+          [
+            -10.0,
+            -8.0,
+            -0.365,
+            40.0,
+            8.0,
+            8.0
+          ]
+        ]
+      },
+      "level_2": {
+        "boxes": [
+          [
+            -7.0,
+            -6.0,
+            -0.365,
+            32.0,
+            6.0,
+            6.0
+          ]
+        ]
+      },
+      "level_3": {
+        "boxes": [
+          [
+            -5.0,
+            -4.0,
+            -0.365,
+            22.0,
+            4.0,
+            4.0
+          ]
+        ]
+      },
+      "level_4": {
+        "boxes": [
+          [
+            -3.5,
+            -3.0,
+            -0.365,
+            15.0,
+            3.0,
+            3.8
+          ]
+        ]
+      },
+      "level_5": {
+        "boxes": [
+          [
+            -1.8,
+            -2.0,
+            -0.365,
+            9.0,
+            2.0,
+            2.25
+          ]
+        ]
+      },
+      "level_6": {
+        "boxes": [
+          [
+            2.4,
+            -1.2,
+            -0.365,
+            7.5,
+            1.2,
+            1.8
+          ],
+          [
+            -1.2,
+            -1.2,
+            -0.365,
+            5.0,
+            1.2,
+            -0.02
+          ]
+        ]
+      },
+      "level_7": {
+        "min_buffer_size": 8
+      },
+      "level_8": {
+        "body_fit_thickness": 6
+      }
+    },
+    "wheel_group": {
+      "RotationSet": {
+        "geometry_group": "geometries>wheel>RotationSet",
+        "enable_auto_wheel_rotation_setting": true,
+        "rotation_center": [
+          0,
+          0,
+          0
+        ],
+        "rotation_axis": [
+          0,
+          0,
+          0
+        ],
+        "rotation_speed": 676.75
+      },
+      "RotationSet_1": {
+        "geometry_group": "geometries>wheel>RotationSet_1",
+        "enable_auto_wheel_rotation_setting": true,
+        "rotation_center": [
+          0,
+          0,
+          0
+        ],
+        "rotation_axis": [
+          0,
+          0,
+          0
+        ],
+        "rotation_speed": 676.75
+      },
+      "RotationSet_2": {
+        "geometry_group": "geometries>wheel>RotationSet_2",
+        "enable_auto_wheel_rotation_setting": true,
+        "rotation_center": [
+          0,
+          0,
+          0
+        ],
+        "rotation_axis": [
+          0,
+          0,
+          0
+        ],
+        "rotation_speed": -676.75
+      },
+      "RotationSet_3": {
+        "geometry_group": "geometries>wheel>RotationSet_3",
+        "enable_auto_wheel_rotation_setting": true,
+        "rotation_center": [
+          0,
+          0,
+          0
+        ],
+        "rotation_axis": [
+          0,
+          0,
+          0
+        ],
+        "rotation_speed": -676.75
+      }
+    },
+    "porous_media_group": null,
+    "instantaneous_field_data_output": {
+      "field_data_output": {
+        "output_start_time_sec": 0.0,
+        "output_end_time_sec": 2.0,
+        "output_interval_sec": 1.0
+      }
+    },
+    "averaged_field_data_output": {
+      "field_data_output": {}
+    },
+    "drag_development_output": {
+      "num_of_bin": 100,
+      "output_range": "default"
+    }
+  },
+  [
+    "include",
+    "tfl_automobile.json"
+  ]
+]
